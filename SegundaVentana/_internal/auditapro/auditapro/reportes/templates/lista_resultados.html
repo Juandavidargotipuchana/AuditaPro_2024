@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h3>Reportes</h3>
+
+<!-- Verifica si hay resultados para mostrar -->
+{% if resultados %}
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Prueba</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Itera sobre cada resultado -->
+            {% for resultado in resultados %}
+                <tr>
+                    <td>{{ resultado.prueba.nombre }}</td>
+                    <td>{{ resultado.resultado }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No hay resultados disponibles.</p>
+{% endif %}
+
+{% endblock %}

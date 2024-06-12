@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h3 class="mt-3">Reportes</h3>
+
+<div class="mb-3">
+        <form method="GET" action="{% url 'lista_reportes' %}" class="row g-3">
+            <div class="col-auto">
+                <label for="start_date" class="sr-only">Start Date:</label>
+                <input type="date" id="start_date" name="start_date" class="form-control form-control-sm mx-2" value="{{ request.GET.start_date }}" placeholder="Start Date">
+            </div>
+            <div class="col-auto">
+                <label for="end_date" class="sr-only">End Date:</label>
+                <input type="date" id="end_date" name="end_date" class="form-control form-control-sm mx-2" value="{{ request.GET.end_date }}" placeholder="End Date">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary btn-sm"><i class="bi bi-search"></i> &nbsp; Search</button>
+            </div>
+    
+            
+        </form>    
+</div>
+
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Tipo</th>
+                <th>Equipo</th>
+                <th>Fecha</th>
+                <th>Detalle</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for reporte in reportes %}
+                <tr>
+                    <td>{{ reporte.nombre }}</td>
+                    <td>{{ reporte.equipo }}</td>
+                    <td>{{ reporte.fecha }}</td>
+                    <td>
+                        <a href="{% url 'report_detail' reporte.pk %}" class="btn btn-primary btn-sm"><i class="bi bi-file-earmark-text"></i> &nbsp;Detalle</a>
+                    </td>
+                    
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="5">No hay reportes.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

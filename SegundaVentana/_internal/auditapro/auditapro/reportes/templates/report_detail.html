@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h3>Detalle del Reporte</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>Tipo</th>
+        <td>{{ reporte.nombre }}</td>
+    </tr>
+    <tr>
+        <th><i class="bi bi-pc-display-horizontal"></i> Equipo</th>
+        <td>{{ reporte.equipo }}</td>
+    </tr>
+    <tr>
+        <th><i class="bi bi-calendar"></i> Fecha</th>
+        <td>{{ reporte.fecha }}</td>
+    </tr>
+</table>
+
+<h4>Resultados</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th><i class="bi bi-check-circle"></i> Prueba</th>
+            
+            <th><i class="bi bi-check-circle-fill"></i> Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for resultado in reporte.resultado_set.all %}
+            <tr>
+                <td>{{ resultado.prueba.nombre }}</td> 
+                <td>{{ resultado.resultado }}</td>
+               
+            </tr>
+        {% empty %}
+            <tr>
+                <td>{{ reporte.nombre }}</td>
+                <td>{{ reporte.datos }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url 'lista_reportes' %}" class="btn btn-primary">Volver a la Lista de Reportes</a>
+{% endblock %}

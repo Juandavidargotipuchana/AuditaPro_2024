@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Audita_Pro</class>
+ <widget class="QMainWindow" name="Audita_Pro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Bienvenido Menú Selección</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(9, 154, 194);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButtonAuditoria">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>510</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(203, 246, 255);
+    font: 12pt &quot;Arial&quot;;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(180, 230, 255); /* Color cuando el cursor está sobre el botón */
+}
+
+QPushButton:pressed {
+    background-color: rgb(150, 220, 255); /* Color cuando el botón está presionado */
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Auditoria </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>571</width>
+      <height>263</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>571</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Arial&quot;;
+background-color: rgb(245, 245, 220);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;¡Bienvenido! &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;Nos complace que estés interesado en evaluar la seguridad en estados reales.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Estamos aquí para ayudarte en tus objetivos de seguridad informática.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Si estás buscando realizar una auditoría o pruebas de seguridad &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;en entornos reales has llegado al lugar adecuado. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Nuestro equipo de expertos está listo para trabajar contigo&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;y proporcionarte el apoyo necesario para llevar a cabo estas evaluaciones.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Por favor, a continuación encontrara dos botones,&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;en el cual usted puede elegir realizar una auditoria o el botón de realizar pruebas de seguridad &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>581</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/logo principal.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>510</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(203, 246, 255);
+    font: 12pt &quot;Arial&quot;;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(180, 230, 255); /* Color cuando el cursor está sobre el botón */
+}
+
+QPushButton:pressed {
+    background-color: rgb(150, 220, 255); /* Color cuando el botón está presionado */
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Módulo Estados </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>561</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;¡Bienvenido!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt;&quot;&gt;Nos complace que estés interesado en evaluar la seguridad en estados reales.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt;&quot;&gt;Por favor, a continuación encontrarás dos botones, en los cuales puedes elegir a &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt;&quot;&gt;realizar, una auditoría o realizar pruebas de seguridad&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

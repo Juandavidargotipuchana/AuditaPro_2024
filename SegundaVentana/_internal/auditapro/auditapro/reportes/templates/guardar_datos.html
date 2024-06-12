@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h3>Reports</h3>
+
+{% if resultados %}
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Prueba</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for resultado in resultados %}
+                <tr>
+                    {% if forloop.first %}
+                        <td rowspan="{{ resultados|length }}">{{ resultado.cliente.nombre }}</td>
+                    {% endif %}
+                    <td>{{ resultado.prueba.nombre }}</td>
+                    <td>{{ resultado.resultado }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No hay resultados disponibles.</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>721</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Módulo Auditoria</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(9, 154, 194);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_V2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>400</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(203, 246, 255);
+    font: 12pt &quot;Arial&quot;;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(180, 230, 255); /* Color cuando el cursor está sobre el botón */
+}
+
+QPushButton:pressed {
+    background-color: rgb(150, 220, 255); /* Color cuando el botón está presionado */
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>9. Control de Acceso</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>480</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(203, 246, 255);
+    font: 12pt &quot;Arial&quot;;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(180, 230, 255); /* Color cuando el cursor está sobre el botón */
+}
+
+QPushButton:pressed {
+    background-color: rgb(150, 220, 255); /* Color cuando el botón está presionado */
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>13. Seguridad en las telecomunicaciones </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>480</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(180, 87, 98);
+    font: 12pt &quot;Arial&quot;;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(200, 107, 118); /* Color cuando el cursor está sobre el botón */
+}
+
+QPushButton:pressed {
+    background-color: rgb(150, 67, 78); /* Color cuando el botón está presionado */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Modulo de Reportes </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>651</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#ffffff;&quot;&gt;AUDITORIA&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;La norma ISO 27001 aborda los dominios y objetos de control en los Numerales &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Symbol'; font-size:12pt;&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;/&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; 9 (Control de Acceso)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Symbol'; font-size:12pt;&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;/&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;12 (Seguridad en la Operatividad) &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Symbol'; font-size:12pt;&quot;&gt;·&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;/&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;13 (Seguridad en las Telecomunicaciones). &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Este estándar internacional proporciona un marco para la implementación de Sistemas &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;de Gestión de Seguridad de la Información (SGSI). &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>400</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(203, 246, 255);
+    font: 12pt &quot;Arial&quot;;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(180, 230, 255); /* Color cuando el cursor está sobre el botón */
+}
+
+QPushButton:pressed {
+    background-color: rgb(150, 220, 255); /* Color cuando el botón está presionado */
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>12. Seguridad en las operatividad</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>641</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/logo segundo panel.jpg</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>560</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(192, 192, 192);
+    font: 12pt &quot;Arial&quot;;
+    color: rgb(0, 0, 0); /* Color del texto negro por defecto */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(212, 212, 212); /* Color cuando el cursor está sobre el botón */
+}
+
+QPushButton:pressed {
+    background-color: rgb(172, 172, 172); /* Color cuando el botón está presionado */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Inicio</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
